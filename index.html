@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Project</title>
+</head>
+
+<body>
+    <div id="cover">
+        <img src="cover.png" alt="Cover" id="cover">
+    </div>
+    <div id="faq">
+        <h3>Chào mừng đến với CSSMaster - Các câu hỏi thường gặp</h3>
+        <p>Mặc dù HTML cũng có những thuộc tính giúp chúng ta định dạng màu sắc, kích thước của một số thành phần trên web nhưng khi chúng ta muốn tùy chỉnh vị trí của một phần tử hoặc tạo hiệu ứng cho phần tử thì HTML không thể làm được. Lúc này chúng ta
+            sẽ cần sử dụng đến CSS.<br> Với CSS chúng ta có thể thỏa sức sáng tạo trong thiết kế website bằng cách tùy chỉnh vị trí các phần tử, màu sắc, màu nền, font chữ, thứ tự sắp xếp của các phần tử, hiệu ứng (đổ bóng, bo góc, xoay...) những điều
+            mà HTML gần như không thể làm được. <br> Và <span style="color:blue; font-weight: bold;">CSSMaster</span> sẽ mang đến cho các bạn một vài thông tin hữu ích về CSS.
+        </p>
+    </div>
+    <div id="main">
+        <div id="list">
+            <h3>Mục lục</h3>
+            <ul>
+                <li>
+                    <a href="#css-basic">CSS cơ bản</a>
+                    <ul>
+                        <li><a href="#_color">Tùy chỉnh màu sắc</a></li>
+                        <li><a href="#_background">Tùy chỉnh hình nền</a></li>
+                        <li><a href="#_margin">Căn chỉnh lề, đệm</a></li>
+                        <li><a href="#_bullet">Dấu đầu dòng</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#css-advanced">CSS nâng cao</a>
+                    <ul>
+                        <li><a href="#_border-radius">Chỉnh bo góc các khung</a></li>
+                        <li><a href="#_border-image">Chọn hình nền cho viền khung</a></li>
+                        <li><a href="#_gradient">Đổ nhiều màu cho nền</a></li>
+                        <li><a href="#_text-shadow">Đổ bóng chữ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#css-tips">Một số mẹo CSS</a>
+                    <ul>
+                        <li><a href="#_import">Hạn chế sử dụng @import</a></li>
+                        <li><a href="#_min-file-css">Giảm kích thước file CSS</a></li>
+                        <li><a href="#_class-id">Tổ chức class và id một cách khoa học</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="css-basic">
+            <table>
+                <caption>CSS cơ bản</caption>
+                <tr>
+                    <td>
+                        <h5 id="_color">Tùy chỉnh màu sắc</h5>
+                        <p>Màu sắc của chữ được chỉ định bằng cách sử dụng tên màu được xác định trước hoặc các giá trị RGB, HEX, HSL, RGBA, HSLA với thuộc tính color Một màu có thể được chỉ định bằng cách sử dụng tên màu: <br>Tomato - Orange - Dodgerblue
+                            - Mediumseagreen - Gray - Slateblue - Violet - Lightgray<br> Màu sắc hình nền cũng tương tự vậy nhưng sẽ dùng với thuộc tính là background-color.<br> Với đường viền, chúng ta có thuộc tính border-color.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_background">Tùy chỉnh hình nền</h5>
+                        <p>Các thuộc tính nền CSS được sử dụng để xác định hiệu ứng nền cho các thành phần. Thuộc tính nền CSS bao gồm:<br> - Màu nền: background-color<br> - Hình nền: background-image<br> - Bối cảnh lặp lại: background-repeat<br> - Dùng
+                            file đính kèm: background-attachment<br> - Vị trí nền: background-position</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_margin">Căn chỉnh lề, đệm</h5>
+                        <p>Thuộc tính margin được sử dụng để tạo không gian xung quanh các phần tử, bên ngoài bất kỳ đường viền xác định nào.<br> Thuộc tính padding được sử dụng để tạo không gian xung quanh nội dung của một phần tử, bên trong bất kỳ đường
+                            viền xác định nào.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_bullet">Dấu đầu dòng</h5>
+                        <p>Trong CSS, có hai loại điều chỉnh danh sách dấu đầu dòng chính:<br> - Danh sách không có thứ tự ul - các mục danh sách được đánh dấu bằng dấu đầu dòng.<br> - Danh sách theo thứ tự ol - các mục danh sách được đánh dấu bằng số hoặc
+                            chữ cái.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="css-advanced">
+            <table>
+                <caption>CSS nâng cao</caption>
+                <tr>
+                    <td>
+                        <h5 id="_border-radius">Chỉnh bo góc các khung</h5>
+                        <p>Thuộc tính border-radius của CSS xác định bán kính góc bo của các thành phần.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_border-image">Chọn hình nền cho viền khung</h5>
+                        <p>Với thuộc tính border-image trong CSS, bạn có thể đặt hình ảnh vào sử dụng làm đường viền xung quanh một thành phần.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_gradient">Đổ nhiều màu cho nền</h5>
+                        <p>Thủ thuật này được gọi là gradient. Thuộc tính này cho phép chúng ta hiển thị các hiệu ứng chuyển tiếp mượt mà giữa hai hay nhiều màu khác nhau.<br> Có 2 loại thông dụng là: linear gradient (màu được đổ dọc, ngang hoặc chéo) và
+                            radial gradient (màu được đổ từ tâm).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_text-shadow">Đổ bóng chữ</h5>
+                        <p>Chúng ta có 2 thuộc tính để tạo bóng cho chữ hoặc các thành phần mong muốn là: text-shadow và box-shadow</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="css-tips">
+            <table>
+                <caption>Một số mẹo CSS</caption>
+                <tr>
+                    <td>
+                        <h5 id="_import">Hạn chế sử dụng @import</h5>
+                        <p>Hạn chế sử dụng @import hoặc tốt nhất là không nên sử dụng @import trong file CSS, vì nó sẽ làm chậm quá trình tải và không sử dụng được khả năng tải file đồng thời của browser. Để dễ hiểu bạn hãy xem ví dụ sau: Chúng ta có 2 file
+                            CSS là a.css và b.css được nhúng vào trang web như sau:<br>
+                            <img src="sub3-1.1.png" alt="1.1"><br> Trong file b.css, bạn import file c.css:<br>
+                            <img src="sub3-1.2.png" alt="1.2"><br> Kết quả khi browser tải trang sẽ như thế này:<br>
+                            <img src="sub3-1.3.png" alt="1.3"><br> Chú thích:<br> - Request 1: browser gửi request để lấy HTML về<br> - Request 2: browser gửi request để lấy a.css<br> - Request 3: browser gửi request để lấy b.css<br> - Request 4: browser
+                            gửi request để lấy c.css<br> Như các bạn thấy ở hình trên, để tải được c.css thì browser phải chờ để tải xong a.css. <br>Lý do: Vì browser khi đã tải xong b.css và bắt đầu đọc nội dung bên trong thì thấy @import yêu cầu phải
+                            tải thêm c.css, lúc này browser phải đứng chờ cho nhóm proccess trước đó chạy xong (trong trường hợp này là chờ a.css) thì mới bắt đầu tải tiếp c.css và tiếp tục render sau khi đã tải xong. Trong khi đó nếu bạn loại bỏ @import
+                            url(c.css) trong b.css đi và nhúng trực tiếp c.css vào trang HTML<br>
+                            <img src="sub3-1.4.png" alt="1.4"><br> thì bạn sẽ có kết quả như sau:<br>
+                            <img src="sub3-1.5.png" alt="1.5">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_min-file-css">Giảm kích thước file CSS</h5>
+                        <p>Giảm kích thước file CSS được thực hiện bằng cách loại bỏ các khoảng trắng không cần thiết, dấu xuống hàng, dấu chấm phẩy cuối cùng trong class hoặc id… Công đoạn này còn được gọi là minify. Để tiện phân biệt giữa file chưa minify
+                            và file đã minify thì bạn nên thêm .min vào tên file đã minify. Ví dụ style.css sau khi minify sẽ thành style.min.css.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 id="_class-id">Tổ chức class và id một cách khoa học</h5>
+                        <p>
+                            Việc này để hỗ trợ bạn sau này khi xem lại code của mình dễ dàng hơn và không bị rối với cách đặt tên của mình, đồng thời cũng dễ dàng nếu có áp dụng một số CSS preprocessor hay BEM.<br> Thay vì đặt tên<br>
+                            <img src="sub3-3.1.png" alt="3.1"><br> thì nên đặt thành<br>
+                            <img src="sub3-3.2.png" alt="3.2"><br> hoặc tổ chức thành<br>
+                            <img src="sub3-3.3.png" alt="3.3">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <a id="backtotop" href="#">Top</a>
+
+    <div id="footer">
+        Design: TuKi <br> Content: Hạo Nam
+    </div>
+</body>
+
+</html>
